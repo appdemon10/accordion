@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+ul,ol{
+
+list-style: none;
+
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: wheat;
+    font-family: sans-serif;
+
+}
+
+.container{
+
+    max-width: 1110px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.accordion{
+
+    width: 800px;
+    cursor: zoom-in; 
+
+}
+
+.accordion .div.open{
+
+    cursor: zoom-out;
+
+}
+
+.div{
+
+    position: relative;
+    margin: 10px 20px;
+
+}
+
+.label{
+
+    position: relative;
+    padding: 10px;
+    background: rgb(30, 62, 204);
+    color: rgb(1, 255, 22);
+    /* border-radius: 20px; */
+
+}
+
+.label::before{
+
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 24px;
+
+}
+
+.accordion .div.open .label::before{
+
+    content: "-";
+
+}
+
+.info{
+
+    position: relative;
+    background: #ffffff;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ;
+    overflow-y: auto;
+    text-align: center;
+    border-radius: 1px;
+
+}
+
+.accordion .div.open  .info{
+
+    height: auto;
+    padding: 15px;
+
+}
+
+
+@media (max-width: 790px) {
+    
+    .accordion{
+
+        width: 650px;
+
+    }
+
+}
+
+@media (max-width: 630px) {
+    
+    .accordion{
+
+        width: 550px;
+
+    }
+
+}
+
+@media (max-width: 540px) {
+    
+    .accordion{
+
+        width: 500px;
+
+    }
+
+}
+
+@media (max-width: 515px) {
+    
+    .accordion{
+
+        width: 450px;
+
+    }
+
+}
+
+@media (max-width: 430px) {
+    
+    .accordion{
+
+        width: 400px;
+
+    }
+
+}
+
+@media (max-width: 405px) {
+    
+    .accordion{
+
+        width: 350px;
+
+    }
+
+}
+
+@media (max-width: 340px) {
+    
+    .accordion{
+
+        width: 300px;
+
+    }
+
+}
